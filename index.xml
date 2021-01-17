@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hongyun&#39;s blog</title>
-    <link>http://example.org/</link>
+    <link>https://hongyuntw.github.io/</link>
     <description>Recent content on hongyun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 17 Jan 2021 21:26:29 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jan 2021 08:06:25 +0600</lastBuildDate><atom:link href="https://hongyuntw.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Sun, 17 Jan 2021 21:26:29 +0800</pubDate>
+      <title>About me</title>
+      <link>https://hongyuntw.github.io/posts/introduction/</link>
+      <pubDate>Sun, 17 Jan 2021 08:06:25 +0600</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://hongyuntw.github.io/posts/introduction/</guid>
+      <description>Me  一個廢物</description>
     </item>
     
   </channel>
