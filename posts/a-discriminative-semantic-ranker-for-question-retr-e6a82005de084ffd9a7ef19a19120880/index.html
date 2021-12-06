@@ -264,20 +264,20 @@
 <p>通常做為First-stage ranker recall很重要，所以必須滿足以上兩個需求才能算是好的Model</p>
 <p>為了滿足<strong>Discriminative Requirement</strong> ，作者任為必須加入較low-level的特徵來滿足，傳統的transformer可能因為太深了，都只能學到比較high-level的representation，因此透過Dense讓transformer在學習過程中持續接收low-level的資訊，也可有效過濾Noise</p>
 <h2 id="method">Method</h2>
-<p><img src="/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled.png" alt="Untitled"></p>
+<p><img src="/posts/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled.png" alt="Untitled"></p>
 <p>Model如上圖，就是將transformer裡面的每層output都傳給接下來的每一層，也就是</p>
-<p><img src="/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/posts/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%201.png" alt="Untitled"></p>
 <p>其中 $E^i$ 代表第i層的transformer輸出</p>
 <p>比較特別的訓練技巧為</p>
 <ul>
 <li>we do not use the transition layers and the batch normalization since the DenseTrans only uses a few layers (𝑁 = 3)</li>
 </ul>
 <p>然後訓練的過程主要跟一般的IR訓練相同為</p>
-<p><img src="/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/posts/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%202.png" alt="Untitled"></p>
 <h2 id="experiments">Experiments</h2>
-<p><img src="/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/posts/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%203.png" alt="Untitled"></p>
 <p>實驗結果</p>
-<p><img src="/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/posts/A%20Discriminative%20Semantic%20Ranker%20for%20Question%20Retr%20e6a82005de084ffd9a7ef19a19120880/Untitled%204.png" alt="Untitled"></p>
 <p>比較Dense 是否有效</p>
 <p>上圖為了測試Dense連接是否有效分別做了</p>
 <ul>
