@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang='en' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | hongyuntw</title>
+
+<meta name="generator" content="Hugo Eureka 0.8.4" />
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-123-45');
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="RocketQA An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering",
+      "item":"/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/"
+    },
+    "headline": "RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | hongyuntw","datePublished": "2021-08-20T06:00:20+06:00",
+    "dateModified": "2021-08-20T06:00:20+06:00",
+    "wordCount":  1039 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "RocketQA An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering"
+}
+</script><meta property="og:title" content="RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering | hongyuntw" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/" />
+
+
+
+<meta property="og:description" content="RocketQA An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering" />
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="hongyuntw" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-08-20T06:00:20&#43;06:00" />
+
+
+<meta property="article:modified_time" content="2021-08-20T06:00:20&#43;06:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="NLP" />
+
+<meta property="article:tag" content="Information Retrieval" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">hongyuntw</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2021-08-20</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>3 min read</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/papers/" class="hover:text-eureka">papers</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <h2 id="abstract--introduction">Abstract + Introduction</h2>
+<ul>
+<li>difficult to effectively train a dual-encoder for dense passage retrieval
+<ul>
+<li>retriever needs to identify positive passages for each question from a large collection</li>
+<li>there might be a large number of unlabeled positives (IR資料集可能有錯誤)
+<ul>
+<li>it is expensive to acquire large-scale training data for open-domain QA</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>反正就是large scale 的open-domain QA Model很難train，所以提出了三種方法來改善整個流程</p>
+<ul>
+<li>cross-batch negatives</li>
+<li>denoised hard negatives</li>
+<li>leverages large-scale unsupervised data “labeled” by a cross-encoder for data augmentation</li>
+</ul>
+<h2 id="method">Method</h2>
+<p>主要相似度公式是採用dot-product</p>
+<p><img src="/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled.png" alt="Untitled"></p>
+<h3 id="cross-batch-negatives">Cross-batch Negatives</h3>
+<ul>
+<li>in-batch negatives has been widely used in previous work</li>
+<li>first compute the passage embeddings within each single GPU, and then share these passage embeddings among all the GPUs - 現在單個gpu算出embedding，再分享給其他gpu一起共用，negative的數量多了N倍 (N個GPU的話)</li>
+</ul>
+<p><img src="/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%201.png" alt="Untitled"></p>
+<h3 id="denoised-hard-negatives">Denoised Hard Negatives</h3>
+<ul>
+<li>Traditional method may bring false negatives (unlabeled positives)
+<ul>
+<li>find that about 70% of them are actually positives or highly relevant in 100 questions</li>
+<li>大型的IR資料集會有漏標positive的問題</li>
+</ul>
+</li>
+<li>utilize a well-trained cross-encoder to remove top-retrieved passages that are likely to be false negatives</li>
+<li>Cross-encoder architecture is more powerful for capturing semantic similarity via deep interaction</li>
+</ul>
+<p>Cross-Encoder判斷出來可能要低於一定的值(&lt;0.1)才真正當作negative，透過Cross-Encoder挑出真正夠negative的來幫助Model學習</p>
+<h3 id="data-augmentation">Data Augmentation</h3>
+<ul>
+<li>utilize cross-encoder to annotate unlabeled questions for data augmentation</li>
+<li>only select the predicted positive and negative passages with high confidence scores estimated by the cross-encoder</li>
+</ul>
+<p>也是用Cross-Encoder對unlabeled資料生成label，大於0.9=positive，小於0.1=negative</p>
+<h3 id="訓練流程">訓練流程</h3>
+<p><img src="/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%202.png" alt="Untitled"></p>
+<ol>
+<li>先用labeled 資料 Train 一個 dual-encoder (cross-batch) ，這邊的negative 就是random取或是取BM25 的topk也行</li>
+<li>Train一個Cross-encoder，training 資料中的positive 是原本data中的positive，negative是利用前一步的dual encoder猜出來的top-k passage並且不屬於positive passage，來當作negative (hard negative by Md)</li>
+<li>train 另一個 dual-encoder ，用上一步的資料做 label denoised ，除了 hard negative by Md之外且cross-encoder (MC) 也要猜是negative 才算是真正的negative(Denoised)</li>
+<li>pseudo label data MD1 先抽 topk 再用 Mc 標label最後在train一個MD2
+Dual encoder 負責retrieve top k 個passage , cross encoder 負責denoised 跟生成unlabel data</li>
+</ol>
+<h2 id="experiments">Experiments</h2>
+<p><img src="/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%203.png" alt="Untitled"></p>
+<p>實驗結果</p>
+<p><img src="/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%204.png" alt="Untitled"></p>
+<ul>
+<li>左上
+<ul>
+<li>這邊是在比較每一步驟中Model的表現結果，可以看到Denoised過後差了10!</li>
+</ul>
+</li>
+<li>右上
+<ul>
+<li>這邊再講說Dual-Encoder取出來的topk中，需要被Denoised的比例，可以看到真的滿高的</li>
+</ul>
+</li>
+<li>左下
+<ul>
+<li>經過Data Augmentation之後生越多資料Model表現越好</li>
+</ul>
+</li>
+<li>右下
+<ul>
+<li>這邊是串後面的QA架構之後的整體表現</li>
+</ul>
+</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>這篇看下來我覺得最有用的是Denoised的部分，也是整體表現提升的關鍵點</p>
+
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/nlp/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#NLP</a>
+    
+    <a href="/tags/information-retrieval/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Information Retrieval</a>
+    
+</div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="/posts/macbert/" class="block">MacBERT：MLM as correction BERT</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/" class="block">A Discriminative Semantic Ranker for Question Retrieval</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+  <script id="utterances" src="https://utteranc.es/client.js"
+        crossorigin="anonymous"
+        async>
+</script>
+<script>
+    if (storageColorScheme == "Light") {
+      document.getElementById('utterances').setAttribute('theme', 'github-light')
+    } else if (storageColorScheme == "Dark") {
+      document.getElementById('utterances').setAttribute('theme', 'github-dark')
+    }
+</script>
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract--introduction">Abstract + Introduction</a></li>
+    <li><a href="#method">Method</a>
+      <ul>
+        <li><a href="#cross-batch-negatives">Cross-batch Negatives</a></li>
+        <li><a href="#denoised-hard-negatives">Denoised Hard Negatives</a></li>
+        <li><a href="#data-augmentation">Data Augmentation</a></li>
+        <li><a href="#訓練流程">訓練流程</a></li>
+      </ul>
+    </li>
+    <li><a href="#experiments">Experiments</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">See Also</h2>
+        <div class="content">
+            
+            <a href="/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/">A Discriminative Semantic Ranker for Question Retrieval</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text"> Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

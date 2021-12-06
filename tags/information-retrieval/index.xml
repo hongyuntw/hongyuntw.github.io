@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Retrieval on hongyuntw</title>
+    <link>/tags/information-retrieval/</link>
+    <description>Recent content in Information Retrieval on hongyuntw</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Aug 2021 06:00:20 +0600</lastBuildDate><atom:link href="/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering</title>
+      <link>/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/</link>
+      <pubDate>Fri, 20 Aug 2021 06:00:20 +0600</pubDate>
+      
+      <guid>/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/</guid>
+      <description>Abstract + Introduction difficult to effectively train a dual-encoder for dense passage retrieval retriever needs to identify positive passages for each question from a large collection there might be a large number of unlabeled positives (IR資料集可能有錯誤) it is expensive to acquire large-scale training data for open-domain QA 反正就是large scale 的open-d</description>
+    </item>
+    
+    <item>
+      <title>A Discriminative Semantic Ranker for Question Retrieval</title>
+      <link>/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/</link>
+      <pubDate>Sun, 17 Jan 2021 08:06:25 +0600</pubDate>
+      
+      <guid>/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/</guid>
+      <description>Abstract + Introduction First-stage ranker 的新架構 DenseTrans - Transformer + DenseNet 的融合物 主要的任務是question retrieval，找出與使用者輸入相似的問題，類似FAQ Term-based的方式會</description>
+    </item>
+    
+  </channel>
+</rss>
