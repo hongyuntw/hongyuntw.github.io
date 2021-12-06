@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on hongyuntw</title>
-    <link>/series/</link>
+    <link>https://hongyuntw.github.io/series/</link>
     <description>Recent content in Series on hongyuntw</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://hongyuntw.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on hongyuntw</title>
-    <link>/tags/</link>
+    <link>https://hongyuntw.github.io/tags/</link>
     <description>Recent content in Tags on hongyuntw</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Oct 2021 06:00:20 +0600</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Oct 2021 06:00:20 +0600</lastBuildDate><atom:link href="https://hongyuntw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NLP</title>
-      <link>/tags/nlp/</link>
+      <link>https://hongyuntw.github.io/tags/nlp/</link>
       <pubDate>Sat, 23 Oct 2021 06:00:20 +0600</pubDate>
       
-      <guid>/tags/nlp/</guid>
+      <guid>https://hongyuntw.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Information Retrieval</title>
-      <link>/tags/information-retrieval/</link>
+      <link>https://hongyuntw.github.io/tags/information-retrieval/</link>
       <pubDate>Fri, 20 Aug 2021 06:00:20 +0600</pubDate>
       
-      <guid>/tags/information-retrieval/</guid>
+      <guid>https://hongyuntw.github.io/tags/information-retrieval/</guid>
       <description></description>
     </item>
     
     <item>
       <title>intro</title>
-      <link>/tags/intro/</link>
+      <link>https://hongyuntw.github.io/tags/intro/</link>
       <pubDate>Sun, 17 Jan 2021 00:41:28 +0800</pubDate>
       
-      <guid>/tags/intro/</guid>
+      <guid>https://hongyuntw.github.io/tags/intro/</guid>
       <description></description>
     </item>
     
