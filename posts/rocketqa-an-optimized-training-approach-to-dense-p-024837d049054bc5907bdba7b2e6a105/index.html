@@ -277,13 +277,13 @@
 </ul>
 <h2 id="method">Method</h2>
 <p>主要相似度公式是採用dot-product</p>
-<p><img src="/posts/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled.png" alt="Untitled"></p>
+<p><img src="/images/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled.png" alt="Untitled"></p>
 <h3 id="cross-batch-negatives">Cross-batch Negatives</h3>
 <ul>
 <li>in-batch negatives has been widely used in previous work</li>
 <li>first compute the passage embeddings within each single GPU, and then share these passage embeddings among all the GPUs - 現在單個gpu算出embedding，再分享給其他gpu一起共用，negative的數量多了N倍 (N個GPU的話)</li>
 </ul>
-<p><img src="/posts/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/images/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%201.png" alt="Untitled"></p>
 <h3 id="denoised-hard-negatives">Denoised Hard Negatives</h3>
 <ul>
 <li>Traditional method may bring false negatives (unlabeled positives)
@@ -303,7 +303,7 @@
 </ul>
 <p>也是用Cross-Encoder對unlabeled資料生成label，大於0.9=positive，小於0.1=negative</p>
 <h3 id="訓練流程">訓練流程</h3>
-<p><img src="/posts/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/images/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%202.png" alt="Untitled"></p>
 <ol>
 <li>先用labeled 資料 Train 一個 dual-encoder (cross-batch) ，這邊的negative 就是random取或是取BM25 的topk也行</li>
 <li>Train一個Cross-encoder，training 資料中的positive 是原本data中的positive，negative是利用前一步的dual encoder猜出來的top-k passage並且不屬於positive passage，來當作negative (hard negative by Md)</li>
@@ -312,9 +312,9 @@
 Dual encoder 負責retrieve top k 個passage , cross encoder 負責denoised 跟生成unlabel data</li>
 </ol>
 <h2 id="experiments">Experiments</h2>
-<p><img src="/posts/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/images/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%203.png" alt="Untitled"></p>
 <p>實驗結果</p>
-<p><img src="/posts/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/images/RocketQA%20An%20Optimized%20Training%20Approach%20to%20Dense%20P%20024837d049054bc5907bdba7b2e6a105/Untitled%204.png" alt="Untitled"></p>
 <ul>
 <li>左上
 <ul>
