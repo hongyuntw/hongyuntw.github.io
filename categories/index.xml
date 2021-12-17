@@ -6,7 +6,34 @@
     <description>Recent content in Categories on hongyuntw</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Oct 2021 06:00:20 +0600</lastBuildDate><atom:link href="https://hongyuntw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate><atom:link href="https://hongyuntw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NLP</title>
+      <link>https://hongyuntw.github.io/categories/nlp/</link>
+      <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
+      
+      <guid>https://hongyuntw.github.io/categories/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>心得</title>
+      <link>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
+      
+      <guid>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>比賽</title>
+      <link>https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/</link>
+      <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
+      
+      <guid>https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>papers</title>
       <link>https://hongyuntw.github.io/categories/papers/</link>
