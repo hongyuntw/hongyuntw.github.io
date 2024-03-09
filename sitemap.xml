@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hongyuntw.github.io/posts/2022_summer_intern/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/categories/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/posts/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/tags/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/tags/%E5%AF%A6%E7%BF%92/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/tags/%E7%B6%93%E9%A9%97/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/tags/%E9%9D%A2%E8%A9%A6/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/categories/%E9%9D%A2%E8%A9%A6/</loc>
-    <lastmod>2022-05-13T21:10:36+08:00</lastmod>
-  </url><url>
     <loc>https://hongyuntw.github.io/tags/aicup/</loc>
     <lastmod>2021-12-17T13:55:59+08:00</lastmod>
   </url><url>
@@ -38,10 +11,22 @@
     <loc>https://hongyuntw.github.io/posts/aicup2021/</loc>
     <lastmod>2021-12-17T13:55:59+08:00</lastmod>
   </url><url>
+    <loc>https://hongyuntw.github.io/categories/</loc>
+    <lastmod>2021-12-17T13:55:59+08:00</lastmod>
+  </url><url>
+    <loc>https://hongyuntw.github.io/</loc>
+    <lastmod>2021-12-17T13:55:59+08:00</lastmod>
+  </url><url>
     <loc>https://hongyuntw.github.io/tags/nlp/</loc>
     <lastmod>2021-12-17T13:55:59+08:00</lastmod>
   </url><url>
     <loc>https://hongyuntw.github.io/categories/nlp/</loc>
+    <lastmod>2021-12-17T13:55:59+08:00</lastmod>
+  </url><url>
+    <loc>https://hongyuntw.github.io/posts/</loc>
+    <lastmod>2021-12-17T13:55:59+08:00</lastmod>
+  </url><url>
+    <loc>https://hongyuntw.github.io/tags/</loc>
     <lastmod>2021-12-17T13:55:59+08:00</lastmod>
   </url><url>
     <loc>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
@@ -64,15 +49,6 @@
   </url><url>
     <loc>https://hongyuntw.github.io/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/</loc>
     <lastmod>2021-01-17T08:06:25+06:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/categories/about/</loc>
-    <lastmod>2021-01-17T00:41:28+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/posts/about/</loc>
-    <lastmod>2021-01-17T00:41:28+08:00</lastmod>
-  </url><url>
-    <loc>https://hongyuntw.github.io/tags/intro/</loc>
-    <lastmod>2021-01-17T00:41:28+08:00</lastmod>
   </url><url>
     <loc>https://hongyuntw.github.io/authors/</loc>
   </url><url>
