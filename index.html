@@ -11,7 +11,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
@@ -53,17 +53,17 @@
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
   integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRV5WTFV9E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'UA-123-45');
+  gtag('config', 'G-SRV5WTFV9E');
 </script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://hongyuntw.github.io/images/icon_hud3bc8a33f87c3d99ec7c3d7d3d541ebd_25470_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://hongyuntw.github.io/images/icon_hud3bc8a33f87c3d99ec7c3d7d3d541ebd_25470_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hongyuntw.github.io/images/icon_hu_4f4e55a10d73f6ba.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hongyuntw.github.io/images/icon_hu_8190559dabbef89f.png">
 
 <meta name="description"
   content="Eureka is a elegant and powerful theme for Hugo.">
@@ -101,7 +101,7 @@
 
 
 
-<meta property="og:updated_time" content="2021-12-17T13:55:59&#43;08:00" />
+<meta property="og:updated_time" content="2025-02-05T10:36:26&#43;08:00" />
 
 
 
@@ -383,11 +383,53 @@ Donec mollis sollicitudin:
   
   <div class="w-full ">
     <div class="mb-4">
+  <a href="https://hongyuntw.github.io/posts/one-year-work/" class="font-bold text-xl hover:text-eureka">工作一年心得</a>
+</div>
+<div class="content">
+  
+    紀錄成為軟體工程師第一年的心得
+  
+</div>
+
+<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2025-02-05</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1 min read</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/" class="hover:text-eureka">心得</a>
+        
+    </div>
+    
+
+    
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
   <a href="https://hongyuntw.github.io/posts/aicup2021/" class="font-bold text-xl hover:text-eureka">Aicup2021 農業文章文字標註及辨識 比賽心得與報告</a>
 </div>
 <div class="content">
   
-    基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲
+    基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲、行軍蟲…全部換成斜紋夜蛾，方面後續model使用 對每篇文章利用ckiptagger做斷詞 在斷詞的時候要使用 coerce_dictionary 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 “黑蟲” 被斷成 [“黑” “蟲”] 把斷好詞的結果做keywords的替換 ex: 把所有 “黑蟲” 換成 “斜紋夜盜” 這樣 在這一步的時候要注意一些特別case，避免被重複替換到 針對每篇文章，取出該篇文章所有出現的keyword集合 比如說 1.txt這篇文章 keyword_set = [“黑點病”,“降雨”,“文旦柚”,“鋅錳乃浦”] Method 在這邊我們一開始的思路有幾種
+
   
 </div>
 
@@ -458,7 +500,7 @@ Donec mollis sollicitudin:
         
         
         <span>, </span>
-        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">papers</a>
+        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">Papers</a>
         
     </div>
     
@@ -503,7 +545,7 @@ Donec mollis sollicitudin:
         
         
         <span>, </span>
-        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">papers</a>
+        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">Papers</a>
         
     </div>
     
@@ -526,7 +568,8 @@ Donec mollis sollicitudin:
 </div>
 <div class="content">
   
-    Abstract &#43; Introduction First-stage ranker 的新架構 DenseTrans - Transformer &#43; DenseNet 的融合物 主要的任務是question retrieval，找出與使用者輸入相似的問題，類似FAQ Term-based的方式會
+    Abstract &#43; Introduction First-stage ranker 的新架構 DenseTrans - Transformer &#43; DenseNet 的融合物 主要的任務是question retrieval，找出與使用者輸入相似的問題，類似FAQ Term-based的方式會有 無法滿足 Semantic Requirement 的缺點
+
   
 </div>
 
@@ -548,7 +591,7 @@ Donec mollis sollicitudin:
         
         
         <span>, </span>
-        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">papers</a>
+        <a href="https://hongyuntw.github.io/categories/papers/" class="hover:text-eureka">Papers</a>
         
     </div>
     

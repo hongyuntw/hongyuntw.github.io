@@ -4,44 +4,37 @@
     <title>Categories on hyc&#39;s blog</title>
     <link>https://hongyuntw.github.io/categories/</link>
     <description>Recent content in Categories on hyc&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate><atom:link href="https://hongyuntw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2025 10:36:26 +0800</lastBuildDate>
+    <atom:link href="https://hongyuntw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>心得</title>
+      <link>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Wed, 05 Feb 2025 10:36:26 +0800</pubDate>
+      <guid>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</guid>
+      <description></description>
+    </item>
     <item>
       <title>NLP</title>
       <link>https://hongyuntw.github.io/categories/nlp/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/categories/nlp/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>心得</title>
-      <link>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</link>
-      <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
-      <guid>https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>比賽</title>
       <link>https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>papers</title>
+      <title>Papers</title>
       <link>https://hongyuntw.github.io/categories/papers/</link>
       <pubDate>Sat, 23 Oct 2021 06:00:20 +0600</pubDate>
-      
       <guid>https://hongyuntw.github.io/categories/papers/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

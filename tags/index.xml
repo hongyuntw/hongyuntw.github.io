@@ -4,44 +4,37 @@
     <title>Tags on hyc&#39;s blog</title>
     <link>https://hongyuntw.github.io/tags/</link>
     <description>Recent content in Tags on hyc&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate><atom:link href="https://hongyuntw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate>
+    <atom:link href="https://hongyuntw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AICUP</title>
       <link>https://hongyuntw.github.io/tags/aicup/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/tags/aicup/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AICUP2021</title>
       <link>https://hongyuntw.github.io/tags/aicup2021/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/tags/aicup2021/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>NLP</title>
       <link>https://hongyuntw.github.io/tags/nlp/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/tags/nlp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Information Retrieval</title>
       <link>https://hongyuntw.github.io/tags/information-retrieval/</link>
       <pubDate>Fri, 20 Aug 2021 06:00:20 +0600</pubDate>
-      
       <guid>https://hongyuntw.github.io/tags/information-retrieval/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -11,7 +11,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
@@ -53,20 +53,55 @@
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
   integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRV5WTFV9E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'UA-123-45');
+  gtag('config', 'G-SRV5WTFV9E');
 </script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://hongyuntw.github.io/images/icon_hud3bc8a33f87c3d99ec7c3d7d3d541ebd_25470_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://hongyuntw.github.io/images/icon_hud3bc8a33f87c3d99ec7c3d7d3d541ebd_25470_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hongyuntw.github.io/images/icon_hu_4f4e55a10d73f6ba.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hongyuntw.github.io/images/icon_hu_8190559dabbef89f.png">
 
 <meta name="description"
-  content="基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲">
+  content="基本資訊
+
+隊伍名稱 : Rule-Based Method
+最終成績 : 7th
+
+0.8063660 7/118 precision : 0.82608 recall : 0.78756
+
+
+
+
+Preprocessing
+
+先針對主辦單位所提供的excel檔，創造出一個替換的dictionary
+
+比如說 ，就把斜紋夜盜、黑蟲、行軍蟲&hellip;全部換成斜紋夜蛾，方面後續model使用
+
+
+對每篇文章利用ckiptagger做斷詞
+
+在斷詞的時候要使用 coerce_dictionary 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 &ldquo;黑蟲&rdquo; 被斷成 [&ldquo;黑&rdquo; &ldquo;蟲&rdquo;]
+
+
+把斷好詞的結果做keywords的替換
+
+ex: 把所有 &ldquo;黑蟲&rdquo; 換成 &ldquo;斜紋夜盜&rdquo; 這樣
+在這一步的時候要注意一些特別case，避免被重複替換到
+
+
+針對每篇文章，取出該篇文章所有出現的keyword集合
+
+比如說 1.txt這篇文章 keyword_set = [&ldquo;黑點病&rdquo;,&ldquo;降雨&rdquo;,&ldquo;文旦柚&rdquo;,&ldquo;鋅錳乃浦&rdquo;]
+
+
+
+Method
+在這邊我們一開始的思路有幾種">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,7 +139,7 @@
             "url": "https://hongyuntw.github.io/images/icon.png"
         }
         },
-    "description": "基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7\/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲"
+    "description": "\u003ch2 id=\u0022基本資訊\u0022\u003e基本資訊\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e隊伍名稱 : Rule-Based Method\u003c\/li\u003e\n\u003cli\u003e最終成績 : 7th\n\u003cul\u003e\n\u003cli\u003e0.8063660 7\/118 precision : 0.82608 recall : 0.78756\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/i.imgur.com\/ga8Rkwb.png\u0022 alt=\u0022\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022preprocessing\u0022\u003ePreprocessing\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e先針對主辦單位所提供的excel檔，創造出一個替換的dictionary\n\u003cul\u003e\n\u003cli\u003e比如說 \u003cimg src=\u0022https:\/\/i.imgur.com\/L6MESeQ.png\u0022 alt=\u0022\u0022\u003e，就把斜紋夜盜、黑蟲、行軍蟲\u0026hellip;全部換成斜紋夜蛾，方面後續model使用\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e對每篇文章利用ckiptagger做斷詞\n\u003cul\u003e\n\u003cli\u003e在斷詞的時候要使用 \u003ccode\u003ecoerce_dictionary\u003c\/code\u003e 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 \u0026ldquo;黑蟲\u0026rdquo; 被斷成 [\u0026ldquo;黑\u0026rdquo; \u0026ldquo;蟲\u0026rdquo;]\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e把斷好詞的結果做keywords的替換\n\u003cul\u003e\n\u003cli\u003eex: 把所有 \u0026ldquo;黑蟲\u0026rdquo; 換成 \u0026ldquo;斜紋夜盜\u0026rdquo; 這樣\u003c\/li\u003e\n\u003cli\u003e在這一步的時候要注意一些特別case，避免被重複替換到\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e針對每篇文章，取出該篇文章所有出現的keyword集合\n\u003cul\u003e\n\u003cli\u003e比如說 1.txt這篇文章 keyword_set = [\u0026ldquo;黑點病\u0026rdquo;,\u0026ldquo;降雨\u0026rdquo;,\u0026ldquo;文旦柚\u0026rdquo;,\u0026ldquo;鋅錳乃浦\u0026rdquo;]\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022method\u0022\u003eMethod\u003c\/h2\u003e\n\u003cp\u003e在這邊我們一開始的思路有幾種\u003c\/p\u003e"
 }
 </script><meta property="og:title" content="Aicup2021 農業文章文字標註及辨識 比賽心得與報告 | hyc&#39;s blog" />
 <meta property="og:type" content="article" />
@@ -118,7 +153,42 @@
 
 
 
-<meta property="og:description" content="基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲" />
+<meta property="og:description" content="基本資訊
+
+隊伍名稱 : Rule-Based Method
+最終成績 : 7th
+
+0.8063660 7/118 precision : 0.82608 recall : 0.78756
+
+
+
+
+Preprocessing
+
+先針對主辦單位所提供的excel檔，創造出一個替換的dictionary
+
+比如說 ，就把斜紋夜盜、黑蟲、行軍蟲&hellip;全部換成斜紋夜蛾，方面後續model使用
+
+
+對每篇文章利用ckiptagger做斷詞
+
+在斷詞的時候要使用 coerce_dictionary 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 &ldquo;黑蟲&rdquo; 被斷成 [&ldquo;黑&rdquo; &ldquo;蟲&rdquo;]
+
+
+把斷好詞的結果做keywords的替換
+
+ex: 把所有 &ldquo;黑蟲&rdquo; 換成 &ldquo;斜紋夜盜&rdquo; 這樣
+在這一步的時候要注意一些特別case，避免被重複替換到
+
+
+針對每篇文章，取出該篇文章所有出現的keyword集合
+
+比如說 1.txt這篇文章 keyword_set = [&ldquo;黑點病&rdquo;,&ldquo;降雨&rdquo;,&ldquo;文旦柚&rdquo;,&ldquo;鋅錳乃浦&rdquo;]
+
+
+
+Method
+在這邊我們一開始的思路有幾種" />
 
 
 
@@ -529,20 +599,16 @@
 <p>這個方法的靈感是，我們在比賽最後發現，主辦單位提供的data，其實有大量的句子/段落是重複的</p>
 <p>比如說這篇文章是在training的1.txt</p>
 <blockquote>
-<p>夏日乾燥炎熱的氣候，正是許多農作物害蟲好發的時機，花蓮區農業改良場籲請農民注意斜紋夜盜及甜菜夜蛾的防治，以免造成作物損失。隨著氣溫增高，許多農作物害蟲也隨之變得活躍，由監測數據顯示宜蘭地區開始出現夜蛾類害蟲的高峰，其中包括斜紋夜蛾和甜菜夜蛾。斜紋夜蛾一般人稱「黑肚蟲」，其食性幾乎是見綠就吃，是種植蔬菜的農友最傷腦筋的害蟲之一。另外青蔥產區除了斜紋夜蛾之外，還有甜菜夜蛾危害，孵化的幼蟲藏匿於蔥管內啃食青蔥，而炎熱的天氣更加速這兩種害蟲繁衍，為了減輕其所造成的嚴重經濟損失，行政院農業委員會花蓮區農業改良場呼籲花蓮宜蘭地區的農友持續進行防治工作，切勿輕忽大意。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，可使族群密度受到壓抑。懸掛距離為20-50公尺，大面積共同懸掛效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片，此動作可瞬間清除300-500顆即將孵化的卵粒。3.蘇力菌防治幼蟲：輪流噴施不同廠牌的蘇力菌降低幼蟲密度，蘇力菌可有效殺死初齡的夜蛾幼蟲，亦為對環境安全的微生物製劑，對人體無害。另一方面，蘇力菌也能與殺蟲農藥混合施用，可省工並降低抗藥性的發生。4.合理使用農藥：防治夜蛾的藥劑很多，應參考植物保護手冊推薦藥劑，輪流施用兩種以上藥劑避免抗藥性產生，同時應遵守安全採收期及施用倍數等使用方法，避免造成農藥殘留。</p>
-</blockquote>
+<p>夏日乾燥炎熱的氣候，正是許多農作物害蟲好發的時機，花蓮區農業改良場籲請農民注意斜紋夜盜及甜菜夜蛾的防治，以免造成作物損失。隨著氣溫增高，許多農作物害蟲也隨之變得活躍，由監測數據顯示宜蘭地區開始出現夜蛾類害蟲的高峰，其中包括斜紋夜蛾和甜菜夜蛾。斜紋夜蛾一般人稱「黑肚蟲」，其食性幾乎是見綠就吃，是種植蔬菜的農友最傷腦筋的害蟲之一。另外青蔥產區除了斜紋夜蛾之外，還有甜菜夜蛾危害，孵化的幼蟲藏匿於蔥管內啃食青蔥，而炎熱的天氣更加速這兩種害蟲繁衍，為了減輕其所造成的嚴重經濟損失，行政院農業委員會花蓮區農業改良場呼籲花蓮宜蘭地區的農友持續進行防治工作，切勿輕忽大意。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，可使族群密度受到壓抑。懸掛距離為20-50公尺，大面積共同懸掛效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片，此動作可瞬間清除300-500顆即將孵化的卵粒。3.蘇力菌防治幼蟲：輪流噴施不同廠牌的蘇力菌降低幼蟲密度，蘇力菌可有效殺死初齡的夜蛾幼蟲，亦為對環境安全的微生物製劑，對人體無害。另一方面，蘇力菌也能與殺蟲農藥混合施用，可省工並降低抗藥性的發生。4.合理使用農藥：防治夜蛾的藥劑很多，應參考植物保護手冊推薦藥劑，輪流施用兩種以上藥劑避免抗藥性產生，同時應遵守安全採收期及施用倍數等使用方法，避免造成農藥殘留。</p></blockquote>
 <p>但是我們將這句</p>
 <blockquote>
-<p>大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍</p>
-</blockquote>
+<p>大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍</p></blockquote>
 <p>在private搜尋可以找到8.txt</p>
 <blockquote>
-<p>夏日乾燥炎熱的氣候，正是許多農作物害蟲好發的時機，花蓮區農業改良場籲請農民注意斜紋夜蛾及甜菜夜蛾的防治，以免造成作物損失。隨著氣溫增高，許多農作物害蟲也隨之變得活躍，由監測數據顯示宜蘭地區斜紋夜蛾及甜菜夜蛾族群數量逐漸攀升。斜紋夜蛾一般人稱「黑肚蟲」，其食性極廣，見綠就吃，是種植蔬菜的農友最傷腦筋的害蟲之一。另青蔥產區除了斜紋夜蛾之外，還有甜菜夜蛾危害，孵化的幼蟲藏匿於蔥管內啃食青蔥，而炎熱的天氣更加速這兩種害蟲繁衍。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，使族群密度受到壓抑。懸掛距離為20-50公尺，大面積共同懸掛效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片後帶離田區丟棄，此動作可瞬間清除300-500顆即將孵化的卵粒。3.微生物製劑防治幼蟲：輪流噴施不同廠牌的蘇力菌或核多角體病毒等對環境安全、對人體無害的微生物製劑以降低幼蟲密度。另一方面，蘇力菌也能與殺蟲農藥混合施用，可省工並降低抗藥性的發生。4.合理使用農藥：防治夜蛾的藥劑很多，應參考植物保護手冊推薦藥劑，選擇2種以上藥劑輪流施用避免抗藥性產生，同時應遵守安全採收期及施用倍數等使用方法，避免造成農藥殘留。</p>
-</blockquote>
+<p>夏日乾燥炎熱的氣候，正是許多農作物害蟲好發的時機，花蓮區農業改良場籲請農民注意斜紋夜蛾及甜菜夜蛾的防治，以免造成作物損失。隨著氣溫增高，許多農作物害蟲也隨之變得活躍，由監測數據顯示宜蘭地區斜紋夜蛾及甜菜夜蛾族群數量逐漸攀升。斜紋夜蛾一般人稱「黑肚蟲」，其食性極廣，見綠就吃，是種植蔬菜的農友最傷腦筋的害蟲之一。另青蔥產區除了斜紋夜蛾之外，還有甜菜夜蛾危害，孵化的幼蟲藏匿於蔥管內啃食青蔥，而炎熱的天氣更加速這兩種害蟲繁衍。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，使族群密度受到壓抑。懸掛距離為20-50公尺，大面積共同懸掛效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片後帶離田區丟棄，此動作可瞬間清除300-500顆即將孵化的卵粒。3.微生物製劑防治幼蟲：輪流噴施不同廠牌的蘇力菌或核多角體病毒等對環境安全、對人體無害的微生物製劑以降低幼蟲密度。另一方面，蘇力菌也能與殺蟲農藥混合施用，可省工並降低抗藥性的發生。4.合理使用農藥：防治夜蛾的藥劑很多，應參考植物保護手冊推薦藥劑，選擇2種以上藥劑輪流施用避免抗藥性產生，同時應遵守安全採收期及施用倍數等使用方法，避免造成農藥殘留。</p></blockquote>
 <p>以及 17.txt</p>
 <blockquote>
-<p>年初至今，常有達25℃以上高溫，且降雨少，為適合蟲害滋生及蔓延。宜蘭縣1月至2月中旬監測斜紋夜蛾及甜菜夜蛾，密度已達紅黃藍燈警戒標準。(一)斜紋夜蛾警戒區如下：壯圍鄉、宜蘭市、員山鄉、三星鄉。(二)甜菜夜蛾預警區：壯圍鄉、宜蘭市。請上述地區種植蔬菜農友特別注意進行防範此兩種夜蛾，以降低作物損失。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，壓制夜蛾族群密度。懸掛時距離約50公尺，大面積蔬菜產區若共同懸掛，則防治效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片，此動作可瞬間清除300-500顆即將孵化的卵粒。3.蘇力菌防治幼蟲：蘇力菌可有效殺死初齡的夜蛾幼蟲，亦為對環境安全的微生物製劑；另一方面，蘇力菌也能與其他殺蟲劑混合施用，可省工並降低抗藥性發生。然因蘇力菌容易被日光分解而降低活性，建議儘量選擇於傍晚日落時施用效果較佳。4.合理使用農藥：防治夜蛾的藥劑很多，請依作物別參考農藥資訊服務網(<a href="https://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem5_5.aspx">https://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem5_5.aspx</a>)推薦藥劑，輪流施用不同作用機制的藥劑避免產生抗藥性，同時應遵守安全採收期及施用倍數，避免造成農藥殘留問題。</p>
-</blockquote>
+<p>年初至今，常有達25℃以上高溫，且降雨少，為適合蟲害滋生及蔓延。宜蘭縣1月至2月中旬監測斜紋夜蛾及甜菜夜蛾，密度已達紅黃藍燈警戒標準。(一)斜紋夜蛾警戒區如下：壯圍鄉、宜蘭市、員山鄉、三星鄉。(二)甜菜夜蛾預警區：壯圍鄉、宜蘭市。請上述地區種植蔬菜農友特別注意進行防範此兩種夜蛾，以降低作物損失。1.大量誘殺雄蟲：懸掛性費洛蒙誘蟲盒於園區外圍，藉由大量誘殺雄蟲，降低雌蟲的交尾機率，壓制夜蛾族群密度。懸掛時距離約50公尺，大面積蔬菜產區若共同懸掛，則防治效果更佳。2.摘除卵塊：若發現葉背有毛狀卵塊，則摘除葉片，此動作可瞬間清除300-500顆即將孵化的卵粒。3.蘇力菌防治幼蟲：蘇力菌可有效殺死初齡的夜蛾幼蟲，亦為對環境安全的微生物製劑；另一方面，蘇力菌也能與其他殺蟲劑混合施用，可省工並降低抗藥性發生。然因蘇力菌容易被日光分解而降低活性，建議儘量選擇於傍晚日落時施用效果較佳。4.合理使用農藥：防治夜蛾的藥劑很多，請依作物別參考農藥資訊服務網(<a href="https://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem5_5.aspx">https://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem5_5.aspx</a>)推薦藥劑，輪流施用不同作用機制的藥劑避免產生抗藥性，同時應遵守安全採收期及施用倍數，避免造成農藥殘留問題。</p></blockquote>
 <p>可以發現兩篇文章似乎都在講同件事情，尤其是8.txt與1.txt 根本一模一樣</p>
 <p>所以有一個大膽的想法，我們可以在testing data中，對每一篇文章，去找出在training set中跟他最像的文章，其中最像的意思是相似度必須要滿足</p>
 <ul>
@@ -559,8 +625,7 @@
 也就是針對a，用相似度算法找出在training set中與其相似度最高的文章(先假設都是1 to 1 mapping)
 假設很剛好的，演算法告訴我們a與A 有大量的句子段落重複、keyword set也很像、也都是相同的語意
 那我們要怎麼找出 a 的 reference呢?
-就是把 B, C, D mapping 到 testing data上面!!就可以把它當作a的 reference了</p>
-</blockquote>
+就是把 B, C, D mapping 到 testing data上面!!就可以把它當作a的 reference了</p></blockquote>
 <p>當然有一些要注意的問題</p>
 <ul>
 <li>這個mapping 不太可能設計成1 to 1，應該會設計成many to many</li>
@@ -609,6 +674,9 @@
         
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
     <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="https://hongyuntw.github.io/posts/one-year-work/" class="block">工作一年心得</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">

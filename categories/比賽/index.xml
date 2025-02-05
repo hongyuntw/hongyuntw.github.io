@@ -4,17 +4,16 @@
     <title>比賽 on hyc&#39;s blog</title>
     <link>https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/</link>
     <description>Recent content in 比賽 on hyc&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate><atom:link href="https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 13:55:59 +0800</lastBuildDate>
+    <atom:link href="https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aicup2021 農業文章文字標註及辨識 比賽心得與報告</title>
       <link>https://hongyuntw.github.io/posts/aicup2021/</link>
       <pubDate>Fri, 17 Dec 2021 13:55:59 +0800</pubDate>
-      
       <guid>https://hongyuntw.github.io/posts/aicup2021/</guid>
-      <description>基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲</description>
+      <description>&lt;h2 id=&#34;基本資訊&#34;&gt;基本資訊&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;隊伍名稱 : Rule-Based Method&lt;/li&gt;&#xA;&lt;li&gt;最終成績 : 7th&#xA;&lt;ul&gt;&#xA;&lt;li&gt;0.8063660 7/118 precision : 0.82608 recall : 0.78756&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/ga8Rkwb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;先針對主辦單位所提供的excel檔，創造出一個替換的dictionary&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如說 &lt;img src=&#34;https://i.imgur.com/L6MESeQ.png&#34; alt=&#34;&#34;&gt;，就把斜紋夜盜、黑蟲、行軍蟲&amp;hellip;全部換成斜紋夜蛾，方面後續model使用&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;對每篇文章利用ckiptagger做斷詞&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在斷詞的時候要使用 &lt;code&gt;coerce_dictionary&lt;/code&gt; 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 &amp;ldquo;黑蟲&amp;rdquo; 被斷成 [&amp;ldquo;黑&amp;rdquo; &amp;ldquo;蟲&amp;rdquo;]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;把斷好詞的結果做keywords的替換&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ex: 把所有 &amp;ldquo;黑蟲&amp;rdquo; 換成 &amp;ldquo;斜紋夜盜&amp;rdquo; 這樣&lt;/li&gt;&#xA;&lt;li&gt;在這一步的時候要注意一些特別case，避免被重複替換到&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;針對每篇文章，取出該篇文章所有出現的keyword集合&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如說 1.txt這篇文章 keyword_set = [&amp;ldquo;黑點病&amp;rdquo;,&amp;ldquo;降雨&amp;rdquo;,&amp;ldquo;文旦柚&amp;rdquo;,&amp;ldquo;鋅錳乃浦&amp;rdquo;]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;&#xA;&lt;p&gt;在這邊我們一開始的思路有幾種&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

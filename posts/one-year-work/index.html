@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>hyc&#39;s blog</title>
+<title>工作一年心得 | hyc&#39;s blog</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.4" />
 <link rel="stylesheet" href="https://hongyuntw.github.io/css/eureka.min.css">
@@ -66,7 +66,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://hongyuntw.github.io/images/icon_hu_8190559dabbef89f.png">
 
 <meta name="description"
-  content="Eureka is a elegant and powerful theme for Hugo.">
+  content="紀錄成為軟體工程師第一年的心得">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,47 +74,50 @@
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"Tags",
-      "item":"https://hongyuntw.github.io/tags/"},{
+      "name":"Posts",
+      "item":"https://hongyuntw.github.io/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"AICUP2021",
-      "item":"https://hongyuntw.github.io/tags/aicup2021/"}]
+      "name":"工作一年心得",
+      "item":"https://hongyuntw.github.io/posts/one-year-work/"}]
 }
 </script>
 
 
 
-
 <script type="application/ld+json">
 {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "Aicup2021 農業文章文字標註及辨識 比賽心得與報告",
-            "description": "\u003ch2 id=\"基本資訊\"\u003e基本資訊\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e隊伍名稱 : Rule-Based Method\u003c/li\u003e\n\u003cli\u003e最終成績 : 7th\n\u003cul\u003e\n\u003cli\u003e0.8063660 7/118 precision : 0.82608 recall : 0.78756\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg src=\"https://i.imgur.com/ga8Rkwb.png\" alt=\"\"\u003e\u003c/p\u003e\n\u003ch2 id=\"preprocessing\"\u003ePreprocessing\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e先針對主辦單位所提供的excel檔，創造出一個替換的dictionary\n\u003cul\u003e\n\u003cli\u003e比如說 \u003cimg src=\"https://i.imgur.com/L6MESeQ.png\" alt=\"\"\u003e，就把斜紋夜盜、黑蟲、行軍蟲\u0026hellip;全部換成斜紋夜蛾，方面後續model使用\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e對每篇文章利用ckiptagger做斷詞\n\u003cul\u003e\n\u003cli\u003e在斷詞的時候要使用 \u003ccode\u003ecoerce_dictionary\u003c/code\u003e 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 \u0026ldquo;黑蟲\u0026rdquo; 被斷成 [\u0026ldquo;黑\u0026rdquo; \u0026ldquo;蟲\u0026rdquo;]\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e把斷好詞的結果做keywords的替換\n\u003cul\u003e\n\u003cli\u003eex: 把所有 \u0026ldquo;黑蟲\u0026rdquo; 換成 \u0026ldquo;斜紋夜盜\u0026rdquo; 這樣\u003c/li\u003e\n\u003cli\u003e在這一步的時候要注意一些特別case，避免被重複替換到\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e針對每篇文章，取出該篇文章所有出現的keyword集合\n\u003cul\u003e\n\u003cli\u003e比如說 1.txt這篇文章 keyword_set = [\u0026ldquo;黑點病\u0026rdquo;,\u0026ldquo;降雨\u0026rdquo;,\u0026ldquo;文旦柚\u0026rdquo;,\u0026ldquo;鋅錳乃浦\u0026rdquo;]\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"method\"\u003eMethod\u003c/h2\u003e\n\u003cp\u003e在這邊我們一開始的思路有幾種\u003c/p\u003e",
-            "url": "https://hongyuntw.github.io/posts/aicup2021/"
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hongyuntw.github.io/posts/one-year-work/"
+    },
+    "headline": "工作一年心得 | hyc\u0027s blog","datePublished": "2025-02-05T10:36:26+08:00",
+    "dateModified": "2025-02-05T10:36:26+08:00",
+    "wordCount":  92 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hongyuntw.github.io/images/icon.png"
         }
-    ]
+        },
+    "description": "紀錄成為軟體工程師第一年的心得"
 }
-</script><meta property="og:title" content="hyc&#39;s blog" />
-<meta property="og:type" content="website" />
+</script><meta property="og:title" content="工作一年心得 | hyc&#39;s blog" />
+<meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="https://hongyuntw.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://hongyuntw.github.io/tags/aicup2021/" />
+<meta property="og:url" content="https://hongyuntw.github.io/posts/one-year-work/" />
 
 
 
-
-
-<meta property="og:description" content="Eureka is a elegant and powerful theme for Hugo." />
-
-
+<meta property="og:description" content="紀錄成為軟體工程師第一年的心得" />
 
 
 
@@ -130,14 +133,17 @@
 
 
 
-<meta property="og:updated_time" content="2021-12-17T13:55:59&#43;08:00" />
+<meta property="article:published_time" content="2025-02-05T10:36:26&#43;08:00" />
+
+
+<meta property="article:modified_time" content="2025-02-05T10:36:26&#43;08:00" />
 
 
 
-<meta property="article:section" content="tags" />
+<meta property="article:section" content="posts" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://hongyuntw.github.io/tags/aicup2021/index.xml" title="hyc's blog" />
+
 
 <body class="flex flex-col min-h-screen">
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
@@ -157,7 +163,7 @@
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
             <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Posts</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
         </div>
 
         <div class="flex">
@@ -208,68 +214,121 @@
   <main class="flex-grow pt-16">
     <div class="pl-scrollbar">
       <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
-<article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text">AICUP2021</h1>
-    
-</article>
-<div class="bg-secondary-bg rounded px-6">
-    <div class="overflow-hidden divide-y">
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="https://hongyuntw.github.io/posts/aicup2021/" class="font-bold text-xl hover:text-eureka">Aicup2021 農業文章文字標註及辨識 比賽心得與報告</a>
-</div>
-<div class="content">
-  
-    基本資訊 隊伍名稱 : Rule-Based Method 最終成績 : 7th 0.8063660 7/118 precision : 0.82608 recall : 0.78756 Preprocessing 先針對主辦單位所提供的excel檔，創造出一個替換的dictionary 比如說 ，就把斜紋夜盜、黑蟲、行軍蟲…全部換成斜紋夜蛾，方面後續model使用 對每篇文章利用ckiptagger做斷詞 在斷詞的時候要使用 coerce_dictionary 這個參數，這個參數可以讓主辦單位提供的keywords，被強制斷出來，不然可能會發生 “黑蟲” 被斷成 [“黑” “蟲”] 把斷好詞的結果做keywords的替換 ex: 把所有 “黑蟲” 換成 “斜紋夜盜” 這樣 在這一步的時候要注意一些特別case，避免被重複替換到 針對每篇文章，取出該篇文章所有出現的keyword集合 比如說 1.txt這篇文章 keyword_set = [“黑點病”,“降雨”,“文旦柚”,“鋅錳乃浦”] Method 在這邊我們一開始的思路有幾種
 
-  
-</div>
 
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">工作一年心得</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>2021-12-17</span>
+        <span>2025-02-05</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>15 min read</span>
+        <span>1 min read</span>
     </div>
     
     
     <div class="mr-6 my-2">
         <i class="fas fa-folder mr-1"></i>
         
-        <a href="https://hongyuntw.github.io/categories/nlp/" class="hover:text-eureka">NLP</a>
-        
-        
-        <span>, </span>
         <a href="https://hongyuntw.github.io/categories/%E5%BF%83%E5%BE%97/" class="hover:text-eureka">心得</a>
-        
-        
-        <span>, </span>
-        <a href="https://hongyuntw.github.io/categories/%E6%AF%94%E8%B3%BD/" class="hover:text-eureka">比賽</a>
         
     </div>
     
 
     
 </div>
+        
+        
+        
 
-  </div>
+        <div class="content">
+            <h2 id="前言">前言</h2>
+<p>騎車過程想到，可以透過文字紀錄一下自己剛開始工作的心得，未來自己 or 小孩看到應該是會覺得很有趣吧，也怕過了太久自己忘記了，所以才想記錄一下.</p>
+<h2 id="選擇成為軟體工程師">選擇成為軟體工程師</h2>
+<h2 id="一年來學到的東西">一年來學到的東西</h2>
+<h2 id="未來規劃">未來規劃</h2>
 
-  
+        </div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="https://hongyuntw.github.io/posts/aicup2021/" class="block">Aicup2021 農業文章文字標註及辨識 比賽心得與報告</a>
+        
+    </div>
 </div>
-  </div>
-  
+
+        
+
+
+
+  <script id="utterances" src="https://utteranc.es/client.js"
+            issue-term=title
+            label=💬
+            repo=hongyuntw/hongyuntw.github.io
+              theme=preferred-color-scheme
+        crossorigin="anonymous"
+        async>
+</script>
+<script>
+    if (storageColorScheme == "Light") {
+      document.getElementById('utterances').setAttribute('theme', 'github-light')
+    } else if (storageColorScheme == "Dark") {
+      document.getElementById('utterances').setAttribute('theme', 'github-dark')
+    }
+</script>
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
 </div>
-
-
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#選擇成為軟體工程師">選擇成為軟體工程師</a></li>
+    <li><a href="#一年來學到的東西">一年來學到的東西</a></li>
+    <li><a href="#未來規劃">未來規劃</a></li>
+  </ul>
+</nav>
 </div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
 
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
 
       </div>
     </div>

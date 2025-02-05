@@ -4,26 +4,23 @@
     <title>Information Retrieval on hyc&#39;s blog</title>
     <link>https://hongyuntw.github.io/tags/information-retrieval/</link>
     <description>Recent content in Information Retrieval on hyc&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Aug 2021 06:00:20 +0600</lastBuildDate><atom:link href="https://hongyuntw.github.io/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 06:00:20 +0600</lastBuildDate>
+    <atom:link href="https://hongyuntw.github.io/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RocketQA : An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering</title>
       <link>https://hongyuntw.github.io/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/</link>
       <pubDate>Fri, 20 Aug 2021 06:00:20 +0600</pubDate>
-      
       <guid>https://hongyuntw.github.io/posts/rocketqa-an-optimized-training-approach-to-dense-p-024837d049054bc5907bdba7b2e6a105/</guid>
-      <description>Abstract + Introduction difficult to effectively train a dual-encoder for dense passage retrieval retriever needs to identify positive passages for each question from a large collection there might be a large number of unlabeled positives (IR資料集可能有錯誤) it is expensive to acquire large-scale training data for open-domain QA 反正就是large scale 的open-d</description>
+      <description>&lt;h2 id=&#34;abstract--introduction&#34;&gt;Abstract + Introduction&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;difficult to effectively train a dual-encoder for dense passage retrieval&#xA;&lt;ul&gt;&#xA;&lt;li&gt;retriever needs to identify positive passages for each question from a large collection&lt;/li&gt;&#xA;&lt;li&gt;there might be a large number of unlabeled positives (IR資料集可能有錯誤)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;it is expensive to acquire large-scale training data for open-domain QA&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;反正就是large scale 的open-domain QA Model很難train，所以提出了三種方法來改善整個流程&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Discriminative Semantic Ranker for Question Retrieval</title>
       <link>https://hongyuntw.github.io/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/</link>
       <pubDate>Sun, 17 Jan 2021 08:06:25 +0600</pubDate>
-      
       <guid>https://hongyuntw.github.io/posts/a-discriminative-semantic-ranker-for-question-retr-e6a82005de084ffd9a7ef19a19120880/</guid>
-      <description>Abstract + Introduction First-stage ranker 的新架構 DenseTrans - Transformer + DenseNet 的融合物 主要的任務是question retrieval，找出與使用者輸入相似的問題，類似FAQ Term-based的方式會</description>
+      <description>&lt;h2 id=&#34;abstract--introduction&#34;&gt;Abstract + Introduction&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First-stage ranker 的新架構 DenseTrans - Transformer + DenseNet 的融合物&lt;/li&gt;&#xA;&lt;li&gt;主要的任務是question retrieval，找出與使用者輸入相似的問題，類似FAQ&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Term-based的方式會有 無法滿足 &lt;strong&gt;Semantic Requirement&lt;/strong&gt; 的缺點&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
